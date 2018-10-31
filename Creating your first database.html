@@ -1,0 +1,145 @@
+﻿<div class="sect1" title="Starting a Database">
+<p>Here’s how to create a blank <a id="idx-CHP-1-0026" class="indexterm"></a>new database:</p>
+<div class="orderedlist"><ol class="orderedlist" type="1">
+<li class="listitem">
+<p><span class="strong"><strong>Start Access</strong></span>.<a id="I_indexterm1_id439348" class="indexterm"></a></p>
+<p>Access starts you out with what is, for Microsoft, a remarkably streamlined window (<a class="xref" href="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/ch01.html#when_you_start_access_you_see_this_two-p" title="Figure 1-1. When you start Access, you see this two-part welcome page. On the left is a list of recently opened databases (if you have any). On the right is a list of templates that you can use to create a new database.">Figure 1-1</a>). Here you can create a new database or open an existing one.</p>
+<div class="figure"><a id="when_you_start_access_you_see_this_two-p"></a>
+<div class="figure-contents">
+<div class="mediaobject"><a id="I_mediaobject1_id439379"></a><img src="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/httpatomoreillycomsourceoreillyimages1606473.png.jpg" alt="When you start Access, you see this two-part welcome page. On the left is a list of recently opened databases (if you have any). On the right is a list of templates that you can use to create a new database." width="622" height="524" /></div>
+</div>
+<div class="figure-title">Figure 1-1. When you start Access, you see this two-part welcome page. On the left is a list of recently opened databases (if you have any). On the right is a list of templates that you can use to create a new database.</div>
+</div>
+<div class="tip" title="Tip">
+<h3 class="title"><a id="tip-6"></a>TIP</h3>
+<p>If you already have Access open and you’ve been working with another database, just choose FileNew to create a new database. You’ll get the same list of templates as when you first launch Access.<a id="idx-CHP-1-0027" class="indexterm"></a></p>
+</div>
+</li>
+<li class="listitem">
+<p><span class="strong"><strong>Click the “Blank desktop database” template</strong></span><a id="idx-CHP-1-0028" class="indexterm"></a>.</p>
+<p>When you choose to create a blank database, that’s exactly what you get—a new, empty database file with no tables or other database objects. Starting from scratch is the best way to learn about Access. It’s also the favorite choice of database experts, who prefer to create everything themselves so it’s exactly the way they like it.</p>
+<p>Other templates let you create databases that are preconfigured for specific scenarios and certain types of data. The box on <a class="xref" href="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/ch01.html#templates_one_size_fits_some" title="Templates: One Size Fits Some">Templates: One Size Fits Some</a> has more information.</p>
+<p>The cool-sounding “Custom web app” template is a special case. It lets you create a web-enabled database that runs on SharePoint. You’ll explore this new feature (and its limitations), in <a class="xref" href="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/ch20.html" title="Chapter 20. Building an Access Web App">Chapter 20</a>.</p>
+<p>No matter which template you click, Access pops open a new window that lets you choose a name and location for your new database (<a class="xref" href="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/ch01.html#this_database_will_be_named_bobbleheadac" title="Figure 1-2. This database will be named Bobblehead.accdb. As you can see by the file path below the File Name box, it will be saved in the folder C:\Users\matthew\Documents. You can edit the file name by typing in the File Name box, and you can browse to a different folder by clicking the folder icon.">Figure 1-2</a>).</p>
+<div class="sidebar"><a id="templates_one_size_fits_some"></a>
+<div class="sidebar-title">UP TO SPEED: TEMPLATES: ONE SIZE FITS SOME</div>
+<p>The example in this section shows you how to create a blank database. However, if you scroll down (on the right side of the <a class="xref" href="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/ch01.html#when_you_start_access_you_see_this_two-p" title="Figure 1-1. When you start Access, you see this two-part welcome page. On the left is a list of recently opened databases (if you have any). On the right is a list of templates that you can use to create a new database.">Figure 1-1</a>), you’ll find a long list of prebuilt databases, which are known as <span class="emphasis"><em>templates</em></span>. Templates aim to save you the work of <a id="idx-CHP-1-0029" class="indexterm"></a>creating a new database and let you jump straight to the fine-tuning and data-entry stage.</p>
+<p>As you might expect, there’s a price to be paid for this convenience. Even if you find a template that stores the type of information you want to track, you might find that the predefined structure isn’t quite right. For example, if you choose to use the Home Inventory template to track all the stuff in your basement, you might find that it’s missing some information you want to use (like the projected resale value of your stuff on eBay) and includes other details you don’t care about (like the date you acquired each item). To make this template work, you’ll need to change the design of your table, which involves the same Access know-how as creating one.</p>
+<p>In this book, you’ll learn how to build your own databases from the ground up and customize every square inch of them. Once you’re an Access master, you can spend many fun hours playing with the prebuilt templates and adapting them to suit your needs. To give it a whirl, click one of a dozen or so templates that are shown in the main Access window. Or, even better, hunt for more by using the Search box at the top of the Access window, which scans through the thousands of templates available on Microsoft’s Office website.</p>
+</div>
+</li>
+<li class="listitem">
+<p><span class="strong"><strong>Type a file name for the database you’re about to create</strong></span>.</p>
+<p>Access stores all the information for a database in a single file with the extension <span class="emphasis"><em>.accdb</em></span> (which stands for “Access database”). Don’t stick with the name Access picks automatically (like “Database1.accdb”). Instead, pick something more descriptive. In this example, Bobblehead.accdb does the trick.<a id="idx-CHP-1-0030" class="indexterm"></a></p>
+<p>As with any other file, <a id="idx-CHP-1-0031" class="indexterm"></a>Access files can contain a combination of letters, spaces, numbers, parentheses, hyphens (-), and the underscore (_). It’s generally safest to stay away from other special characters, some of which aren’t allowed.</p>
+<div class="figure"><a id="this_database_will_be_named_bobbleheadac"></a>
+<div class="figure-contents">
+<div class="mediaobject"><a id="I_mediaobject1_id439592"></a><img src="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/httpatomoreillycomsourceoreillyimages1606475.png.jpg" alt="This database will be named Bobblehead.accdb. As you can see by the file path below the File Name box, it will be saved in the folder C:\Users\matthew\Documents. You can edit the file name by typing in the File Name box, and you can browse to a different folder by clicking the folder icon." width="589" height="331" /></div>
+</div>
+<div class="figure-title">Figure 1-2. This database will be named Bobblehead.accdb. As you can see by the file path below the File Name box, it will be saved in the folder C:\Users\matthew\Documents. You can edit the file name by typing in the File Name box, and you can browse to a different folder by clicking the folder icon.</div>
+</div>
+<div class="note" title="Note">
+<h3 class="title"><a id="note-3"></a>NOTE</h3>
+<p>Depending on your computer settings, Windows may hide file extensions. Instead of seeing the <a id="idx-CHP-1-0032" class="indexterm"></a>Access database file MyScandalousWedding.accdb in file-browsing tools like Windows Explorer, you may just see the name MyScandalousWedding (without the .accdb part on the end). In this case, you can still tell the file type by looking at the icon. If you see a small Access icon next to the file name, that’s your signal that you’re looking at an Access database.</p>
+</div>
+</li>
+<li class="listitem">
+<p><span class="strong"><strong>Choose the folder where you want to store your database</strong></span>.<a id="I_indexterm1_id439655" class="indexterm"></a></p>
+<p>Like all Office programs, Access assumes you want to store every file you create in your personal Documents folder. If this isn’t what you want, click the folder icon to show the File <a id="idx-CHP-1-0033" class="indexterm"></a>New Database window, browse to the folder you want (<a class="xref" href="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/ch01.html#the_file_new_database_window_lets_you_ch" title="Figure 1-3. The File New Database window lets you choose where you’ll store a new Access database file. It also gives you the option to create your database in the format used by older versions of Access (.mdb), instead of the more modern format used by Access 2007, Access 2010, and Access 2013 (.accdb). To change the format, simply choose the corresponding Access version from the “Save as type” list, as shown here.">Figure 1-3</a>), and then click OK.</p>
+<div class="figure"><a id="the_file_new_database_window_lets_you_ch"></a>
+<div class="figure-contents">
+<div class="mediaobject"><a id="I_mediaobject1_id439699"></a><img src="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/httpatomoreillycomsourceoreillyimages1606477.png.jpg" alt="The File New Database window lets you choose where you’ll store a new Access database file. It also gives you the option to create your database in the format used by older versions of Access (.mdb), instead of the more modern format used by Access 2007, Access 2010, and Access 2013 (.accdb). To change the format, simply choose the corresponding Access version from the “Save as type” list, as shown here." width="532" height="378" /></div>
+</div>
+<div class="figure-title">Figure 1-3. The File New Database window lets you choose where you’ll store a new Access database file. It also gives you the option to create your database in the format used by older versions of Access (.mdb), instead of the more modern format used by Access 2007, Access 2010, and Access 2013 (.accdb). To change the format, simply choose the corresponding Access version from the “Save as type” list, as shown here.</div>
+</div>
+</li>
+<li class="listitem">
+<p><span class="strong"><strong>Click the big Create button (under the File Name box)</strong></span>.<a id="idx-CHP-1-0034" class="indexterm"></a></p>
+<p>Access creates your database file and then shows a datasheet where you can get to work <a id="idx-CHP-1-0035" class="indexterm"></a>creating your first table.</p>
+</li>
+</ol></div>
+<div class="sidebar"><a id="telling_access_where_to_store_your_datab"></a>
+<div class="sidebar-title">An impressive-looking toolbar (the <span class="emphasis"><em>ribbon</em></span>) appears at the top of your screen, and a Navigation Pane shows up on the left. You’re now in the control center where you’ll perform all your database tasks (<a class="xref" href="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/ch01.html#the_navigation_pane_on_the_left_lets_you" title="Figure 1-4. The navigation pane on the left lets you see different items (or objects) in your database. You can use the navigation pane to jump from a list of products to a list of customers and back again. The ribbon along the top groups together every Access command. This ribbon is the mission control that lets you perform various tasks with your database. The document window in the middle takes up the rest of the window. This window is where you’ll do your work, such as designing tables and entering data.">Figure 1-4</a>).</div>
+</div>
+<div class="figure"><a id="the_navigation_pane_on_the_left_lets_you"></a>
+<div class="figure-contents">
+<div class="mediaobject"><a id="I_mediaobject1_id439860"></a><img src="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/httpatomoreillycomsourceoreillyimages1606479.png.jpg" alt="The navigation pane on the left lets you see different items (or objects) in your database. You can use the navigation pane to jump from a list of products to a list of customers and back again. The ribbon along the top groups together every Access command. This ribbon is the mission control that lets you perform various tasks with your database. The document window in the middle takes up the rest of the window. This window is where you’ll do your work, such as designing tables and entering data." width="677" height="394" /></div>
+</div>
+<div class="figure-title">Figure 1-4. The navigation pane on the left lets you see different items (or objects) in your database. You can use the navigation pane to jump from a list of products to a list of customers and back again. The ribbon along the top groups together every Access command. This ribbon is the mission control that lets you perform various tasks with your database. The document window in the middle takes up the rest of the window. This window is where you’ll do your work, such as designing tables and entering data.</div>
+</div>
+<p>If you haven’t used the ribbon before (either in Access or in another Office program), the Introduction covers the <a id="idx-CHP-1-0038" class="indexterm"></a>basics of how the ribbon works. Otherwise, carry on to the next section, where you’ll learn how to add a table to your brand-new, empty database.</p>
+</div>
+<div class="sect1" title="Building Your First Table">
+<div class="titlepage">
+<div>
+<div>
+<h2 class="title" id="building_your_first_table">Building Your First Table</h2>
+</div>
+</div>
+</div>
+<p><span class="emphasis"><em>Tables</em></span> are information containers. Every database needs at least one table—without it, you can’t store any data. In a simple database, like the Bobblehead database, a single table (which we’ll call Dolls) is enough. But if you find yourself wanting to store several lists of related information, you need more than one table. In the database BigBudgetWedding.accdb, you may want to keep track of the guests that you invited to your wedding, the gifts that you requested, and the loot that you actually received. In <a class="xref" href="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/ch05.html" title="Chapter 5. Linking Tables with Relationships">Chapter 5</a>, you’ll see plenty of examples of databases that use multiple tables.<a id="I_indexterm1_id439931" class="indexterm"></a></p>
+<p><a class="xref" href="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/ch01.html#in_a_table_each_record_occupies_a_separa" title="Figure 1-5. In a table, each record occupies a separate row. Each field is represented by a separate column. In this table, it’s clear that you’ve added five bobblehead dolls. You’re storing information for each doll in five fields (ID, Character, Manufacturer, PurchasePrice, and DateAcquired).">Figure 1-5</a> shows a sample table.</p>
+<div class="figure"><a id="in_a_table_each_record_occupies_a_separa"></a>
+<div class="figure-contents">
+<div class="mediaobject"><a id="I_mediaobject1_id439961"></a><img src="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/httpatomoreillycomsourceoreillyimages1606481.png.jpg" alt="In a table, each record occupies a separate row. Each field is represented by a separate column. In this table, it’s clear that you’ve added five bobblehead dolls. You’re storing information for each doll in five fields (ID, Character, Manufacturer, PurchasePrice, and DateAcquired)." width="633" height="346" /></div>
+</div>
+<div class="figure-title">Figure 1-5. In a table, each record occupies a separate row. Each field is represented by a separate column. In this table, it’s clear that you’ve added five bobblehead dolls. You’re storing information for each doll in five fields (ID, Character, Manufacturer, PurchasePrice, and DateAcquired).</div>
+</div>
+<p>Before you start designing this table, you need to know some very basic rules:</p>
+<div class="itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<p><span class="strong"><strong>A table is a group of</strong></span> <span class="emphasis"><em>records</em></span>. A record is a collection of information about a single thing. In the Dolls table, for example, each record represents a single bobblehead doll. In a Family table, each record would represent a single relative. In a Products table, each record would represent an item that’s for sale. You get the idea. When you create a new database, Access starts you out with a new table named <span class="emphasis"><em>Table1</em></span>, although you can choose a more distinctive name when you decide to save it.</p>
+</li>
+<li class="listitem">
+<p><span class="strong"><strong>Each record is subdivided into</strong></span> <span class="emphasis"><em>fields</em></span>. Each field stores a distinct piece of information. For example, in the Dolls table, one field stores the person on whom the doll is based, another field stores the price, another field stores the date you bought it, and so on.</p>
+</li>
+<li class="listitem">
+<p><span class="strong"><strong>Tables have a rigid structure</strong></span>. In other words, you can’t bend the rules. If you create four fields, <span class="emphasis"><em>every</em></span> record must have four fields (although it’s acceptable to leave some fields blank if they don’t apply).<a id="I_indexterm1_id440048" class="indexterm"></a></p>
+</li>
+<li class="listitem">
+<p><span class="strong"><strong>Newly created tables get an ID field for free</strong></span>. The ID field stores a unique number for each record. (Think of it as a reference number that will let you find a specific record later on.) The best part about the ID field is that you can ignore it when you’re entering a new record. Access chooses a new ID number for you and inserts it in the record automatically. You’ll learn much more about ID fields on <a class="xref" href="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/ch02.html#autonumber" title="AutoNumber">AutoNumber</a>.</p>
+</li>
+</ul>
+</div>
+<div class="sidebar">
+<div class="sidebar-title"></div>
+<div class="sidebar-title"><span style="font-size: 1.17em;">Creating a Simple Table</span></div>
+</div>
+<div class="sect2" title="Creating a Simple Table">
+<p>When you first create a database, it’s almost empty. But to get you started, Access creates your first database object—a table named Table1. The problem is, this table begins life completely blank, with no defined fields (and no data).<a id="idx-CHP-1-0040" class="indexterm"></a></p>
+<p>If you followed the steps in the previous section to create a new database, you’re already at the <span class="emphasis"><em>Datasheet view</em></span> (<a class="xref" href="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/ch01.html#in_a_table_each_record_occupies_a_separa" title="Figure 1-5. In a table, each record occupies a separate row. Each field is represented by a separate column. In this table, it’s clear that you’ve added five bobblehead dolls. You’re storing information for each doll in five fields (ID, Character, Manufacturer, PurchasePrice, and DateAcquired).">Figure 1-5</a>), which is where you enter data into a table. All you need to do is customize this table so that it meets your needs.</p>
+<p>You can customize a table in two ways:</p>
+<div class="itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<p><span class="strong"><strong>Design view</strong></span> lets you precisely define all aspects of a table before you start using it. Almost all database pros prefer Design view, and you’ll start using it in <a class="xref" href="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/ch02.html" title="Chapter 2. Building Smarter Tables">Chapter 2</a>.</p>
+</li>
+<li class="listitem">
+<p><span class="strong"><strong>Datasheet view</strong></span> is where you enter data into a table. Datasheet view also lets you build a table on the fly as you insert new information. You’ll use this approach in this chapter.</p>
+</li>
+</ul>
+</div>
+<p>The following steps show you how to turn a blank new table (like Table1) into the Dolls table by using the Datasheet view:</p>
+<div class="orderedlist"><ol class="orderedlist" type="1">
+<li class="listitem">
+<p><span class="strong"><strong>To define your table, simply add your first record</strong></span>.</p>
+<p>In this case, that means choosing a bobblehead doll to add to the list. For this example, you’ll use a nifty Homer Simpson replica.</p>
+<div class="note" title="Note">
+<h3 class="title"><a id="note-4"></a>NOTE</h3>
+<p>It doesn’t matter which doll you enter first. Access <a id="idx-CHP-1-0041" class="indexterm"></a><a id="idx-CHP-1-0042" class="indexterm"></a>tables are <span class="emphasis"><em>unsorted</em></span>, which means they have no underlying order. However, you can sort them any way you want when you need to retrieve information later on.<a id="idx-CHP-1-0043" class="indexterm"></a></p>
+</div>
+</li>
+<li class="listitem">
+<p><span class="strong"><strong>In the datasheet’s rightmost column, under the “Click to Add” heading, type the first piece of information for the record (see <a class="xref" href="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/ch01.html#to_fill_in_your_first_record_start_by_en" title="Figure 1-6. To fill in your first record, start by entering something in the first field of information (like the doll name “Homer Simpson”). Then, hit Tab to jump to the second column, and then enter the second piece of information. Ignore the ID column for now—Access adds that to every table to identify your records.">Figure 1-6</a>)</strong></span>.</p>
+<p>Based on the <a id="idx-CHP-1-0044" class="indexterm"></a>simple analysis you performed earlier, you know that you need to enter four fields of information for every doll. For the Homer Simpson doll, this information is “Homer Simpson” (the name), “Fictional Industries” (the manufacturer), “$7.99” (the price), and today’s date (the purchase date). Although you could start with any field, it makes sense to begin with the name, which is clearly an identifying detail.</p>
+<div class="figure"><a id="to_fill_in_your_first_record_start_by_en"></a>
+<div class="figure-contents">
+<div class="mediaobject"><a id="I_mediaobject1_id440305"></a><img src="https://www.safaribooksonline.com/library/view/access-2013-the/9781449359447/httpatomoreillycomsourceoreillyimages1606483.png.jpg" alt="To fill in your first record, start by entering something in the first field of information (like the doll name “Homer Simpson”). Then, hit Tab to jump to the second column, and then enter the second piece of information. Ignore the ID column for now—Access adds that to every table to identify your records." width="599" height="423" /></div>
+</div>
+<div class="figure-title">Figure 1-6. To fill in your first record, start by entering something in the first field of information (like the doll name “Homer Simpson”). Then, hit Tab to jump to the second column, and then enter the second piece of information. Ignore the ID column for now—Access adds that to every table to identify your records.</div>
+</div>
+</li>
+</ol></div>
+</div>
+</div>
